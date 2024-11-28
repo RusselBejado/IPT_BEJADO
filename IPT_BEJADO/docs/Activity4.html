@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IPT_BEJADO/docs/css/Activity4.css">
+	<title>Landing Page</title>
+ <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000; /* Header background color to black */
+            color: white;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #28a745; /* Change button color to green */
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #218838;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .middle-left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .middle-right {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border: 2px solid #000; /* Change paragraph border color to black */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .middle-right p {
+            line-height: 1.6;
+        }
+
+        .middle-left img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #000; /* Change image border color to black */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .custom-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../css/LOGO.PNG" alt="Logo" class="logo">
+        <div class="nav-buttons">
+            <a href="" class="nav-button">Home</a>
+			<a href="" class="nav-button">Lesson</a>
+			<a href="" class="nav-button">Websites</a>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="middle-left">
+            <img src="../css/Russel.jpeg" alt="Middle Image">
+        </div>
+        <div class="middle-right">
+            <p>Hello there! My name is Russel P. Bejado. I'm currently studying at City of Malabon University in the College of Computer Studies. I have knowledge in other languages like Java, C++, and Python. I live at 6 Industrial Rd. Potrero, Malabon City. This is my contact number for more info: 09123458991. Thank you!</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="" class="custom-button">Start Learning</a>
+    </div>
+</body>
+</html>

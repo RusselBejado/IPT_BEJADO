@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Activity5.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers & Toggle Theme</title>
+<style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light Mode (White) */
+        body {
+            background-color: #FFFFFF; /* White */
+            color: #000;
+        }
+
+        /* Dark Mode (Dark Charcoal) */
+        .dark-mode {
+            background-color: #333333; /* Dark Charcoal */
+            color: #ffffff;
+        }
+
+        .toggle-theme-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 10px;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add Two Numbers</h2>
+    
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" required>
+    <br><br>
+    
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" required>
+    <br><br>
+    
+    <button onclick="addNumbers()">Add</button>
+    <p id="result"></p>
+    
+    <button class="toggle-theme-button" onclick="toggleTheme()"> Dark/Light Mode</button>
+
+    <script>
+        function addNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const sum = num1 + num2;
+            document.getElementById('result').textContent = "The sum is: " + sum;
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>

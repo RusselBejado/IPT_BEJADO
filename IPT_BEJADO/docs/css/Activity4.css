@@ -1,0 +1,102 @@
+ <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000; /* Header background color to black */
+            color: white;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #28a745; /* Change button color to green */
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #218838;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .middle-left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .middle-right {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border: 2px solid #000; /* Change paragraph border color to black */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .middle-right p {
+            line-height: 1.6;
+        }
+
+        .middle-left img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #000; /* Change image border color to black */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .custom-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #218838;
+        }
+    </style>
